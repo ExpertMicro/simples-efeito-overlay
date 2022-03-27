@@ -20,6 +20,10 @@ img {
 .hover-effect {
   overflow: hidden;
   position: relative;
+}
+
+/* Podemos usar display grid place-items center para centralizar na vertical ou text-align: center */
+.item {
   text-align: center;
 }
 
@@ -43,9 +47,8 @@ img {
   opacity: 1;
 }
 
-
 .btn-card-event {
-  font-family: 'Roboto', serif;
+  font-family: "Roboto", serif;
   font-size: 18px;
   text-decoration: none;
   font-weight: 300;
@@ -57,16 +60,26 @@ img {
 }
 
 .btn-card-event:hover {
-  background: #EE4433;
+  background: #ee4433;
 }
 
-.item h3 {
+.content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.content h3 {
   font-size: 24px;
   font-weight: 400;
-  font-family: 'Roboto', serif;
+  font-family: "Roboto", serif;
   text-transform: uppercase;
   color: #fff;
-  margin-top: 200px;
-  margin-bottom: 40px;
   letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.content a {
+  display: inline-block;
 }
